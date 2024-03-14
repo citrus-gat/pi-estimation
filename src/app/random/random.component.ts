@@ -56,10 +56,10 @@ export class RandomComponent {
       const locations = this.randoms.map(p => this.locatePt(...p));
       const numO = locations.filter(loc => loc === 'o').length;
       this.stats = [
-        {description: "Quardrant 1", value: locations.filter(loc => loc === '1').length},
-        {description: "Quardrant 2", value: locations.filter(loc => loc === '2').length},
-        {description: "Quardrant 3", value: locations.filter(loc => loc === '3').length},
-        {description: "Quardrant 4", value: locations.filter(loc => loc === '4').length},
+        {description: "Quadrant 1", value: locations.filter(loc => loc === '1').length},
+        {description: "Quadrant 2", value: locations.filter(loc => loc === '2').length},
+        {description: "Quadrant 3", value: locations.filter(loc => loc === '3').length},
+        {description: "Quadrant 4", value: locations.filter(loc => loc === '4').length},
         // {description: "Origin", value: numO},
         // {description: "# pt on x-axis", value: locations.filter(loc => loc === 'x').length + numO}, 
         // {description: "# pt on y-axis", value: locations.filter(loc => loc === 'y').length + numO},
