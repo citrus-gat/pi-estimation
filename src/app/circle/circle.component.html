@@ -1,0 +1,59 @@
+<p>
+  Now, the point <span class="digit">(x, y)</span> is in the unit circle when 
+  <span class="digit"> x² + y² < 1</span>. 
+  For example, the point <span class="digit">(-0.34, 0.02)</span> is <strong>in</strong> 
+  the unit circle because <span class="digit"> (-0.34)² + 0.02² = 0.12 < 1</span>, 
+  while <span class="digit"> (0.79, -0.71)</span> is <strong>not</strong> in 
+  the unit circle because <span class="digit"> 0.79² + (-0.71)² = 1.13 > 1</span>. 
+</p>
+
+<p>
+  Based on this calculation, there are 
+  <!-- <span class="digit"> -->
+    {{ pts_in_circle }}
+  <!-- </span>  -->
+  points in the unit circle from the above  
+  <!-- <span class="digit"> -->
+    1000
+  <!-- </span>  -->
+  points we generated. 
+</p>
+
+<p>
+  The proportion of points resting inside the unit circle is 
+  <span class="digit">{{ pts_in_circle }} / 1000 = {{ pts_in_circle / 1000 }}</span>.
+</p>
+
+<p>
+  On the other hand, 
+  the area of a circle is <span class="digit">πr²</span>, where <span class="digit">r</span>
+  is the radius of the circle. 
+  Since the radius of the unit circle is <span class="digit">1</span>, the area of the 
+  unit circle will then be <span class="digit">π1² = π</span>. 
+</p>
+
+<p>
+  The area of a square is <span class="digit">a²</span>, where <span class="digit">a</span>
+  is the side length of the square. 
+  The side length of the square is <span class="digit">2</span>, so the area of the 
+  unit square is <span class="digit">2² = 4</span>. 
+</p>
+
+<p>
+  When randomly choosing a point from the unit square, the probability of the point 
+  landing in the unit circle is 
+  <span class="digit">p = Area of the unit circle / Area of the unit square = πr² / a² = π/4</span>,
+  in other words, <span class="digit">π = 4p</span>. 
+</p>
+
+<p>
+  Now, we can estimate <span class="digit">π</span> by estimating <span class="digit">p</span>,
+  which is approximated by the proportion of the 1000 points in the unit circle, 
+  <span class="digit">p ≈ {{ pts_in_circle / 1000 }}</span>.
+</p>
+
+<p>
+  So our final estimation of <span class="digit">π</span> is 🥁🍕🥁🍕🥁
+</p>
+
+<p class="digit" style="text-align: center;">π = 4p ≈ 4 × {{ pts_in_circle / 1000 }} = {{ pts_in_circle / 1000 * 4 }}</p>

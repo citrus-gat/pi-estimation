@@ -1,0 +1,36 @@
+<div class="main">
+  <h1>{{title}}</h1>
+
+
+  <!-- {{step}}
+
+  <div class="step1" *ngIf="step === 1">
+    step 1!
+  </div>
+
+  <button 
+    class="btn-primary" 
+    (click)="backward()">Prev
+  </button>
+
+  <button 
+    class="btn-primary" 
+    (click)="advance()">Next
+  </button> -->
+
+  <div class="step" id="step1">
+    <h2>some intro</h2> 
+  </div>
+
+  <div class="step" id="step2">
+    
+    <h2> First, let's generate 1000 random numbers</h2>
+    <app-random (moveon)="step = 3" (in_circle)="pts_in_circle = $event"/>
+  </div>
+
+  <div class="step" id="step3" *ngIf="step > 2">
+    <app-circle [pts_in_circle]="pts_in_circle" />
+  </div>
+</div>
+
+

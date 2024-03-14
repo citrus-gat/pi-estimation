@@ -1,0 +1,25 @@
+<!-- <p>random works!</p> -->
+<button class="btn btn2" (click)="getRandoms(); getStats(); moveon.emit(); output_in_circle_ctn()">
+  {{ randoms.length === 0 ? 'generate' : 'generate again' }}
+</button>
+
+<div id="random_container">
+  <ul id="random_list">
+    <li *ngFor="let p of randoms" class="digit"> 
+      ({{ (p[0] < 0 ? "" : " ") + p[0].toFixed(2) }}, {{ (p[1] < 0 ? "" : " ") + p[1].toFixed(2) }})
+    </li>
+  </ul>
+</div>
+
+<div id="random_stats" >
+  <table *ngFor="let property of stats">
+    <tr>
+      <th>{{ property.description }}</th>
+    </tr>
+    <tr>
+      <td>{{ property.value }} points </td>
+    </tr>
+  </table>
+  
+
+</div>

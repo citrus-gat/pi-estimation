@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: Helvetica, Arial, Helvetica, sans-serif;
+}
+
+p {
+  text-align: left;
+}
+
+.digit {
+  font-family: Courier, monospace, 'Courier New';
+}

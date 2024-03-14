@@ -1,0 +1,35 @@
+/* #random_container {
+  max-height: 400px;
+} */
+
+#random_list {
+  margin: 2% 5%;
+  padding: 0px;
+  width: 90%;
+  height: 300px;
+  overflow:hidden; 
+  overflow-y:scroll;
+}
+
+#random_list li{
+  display: inline-block;
+  width: 110px;
+  font-size: 9pt;
+  text-align: left;
+  white-space: pre;
+  /* float: left; */
+  /* padding: 10px; */
+}
+
+#random_stats {
+  height: 50px;
+}
+
+#random_stats table {
+  display: inline-block;
+  padding: 0px 5px;
+}
+
+.hidden {
+  visibility: hidden;
+}
