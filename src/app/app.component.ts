@@ -12,7 +12,7 @@ import { CircleComponent } from './circle/circle.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title:string = 'π estimation';
+  title:string = 'π estimator';
   maxSteps:number = 5;
   step:number = 2;
 
