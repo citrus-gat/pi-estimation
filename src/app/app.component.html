@@ -19,12 +19,13 @@
   </button> -->
 
   <div class="step" id="step1">
-    <h2>some intro</h2> 
+    <h2>Introduction</h2> 
+    <p>π (pi) is a constant that relates the radius of a circle to its area. This app estimates π numerically by randomly generating several points in the plane and calculating the proportion that lie inside a circle.</p>
   </div>
 
   <div class="step" id="step2">
     
-    <h2> First, let's generate 1000 random numbers</h2>
+    <h2> First, let's generate 1000 random points</h2>
     <app-random (moveon)="step = 3" (in_circle)="pts_in_circle = $event"/>
   </div>
 
