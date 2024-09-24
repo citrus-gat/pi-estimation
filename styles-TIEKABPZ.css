@@ -1,0 +1,1 @@
+:root{--dark: #1e1e1e}body{font-family:Helvetica,Arial,Helvetica,sans-serif}p{text-align:left}.digit{font-family:Courier,monospace,Courier New}.btn{width:150px;height:40px;font-size:large;background-color:#fff;color:var(--dark);border:3px solid var(--dark);border-radius:4px;transition-duration:.1s}.btn:hover{background-color:var(--dark);color:#fff}
